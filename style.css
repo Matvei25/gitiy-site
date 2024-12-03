@@ -5,6 +5,16 @@ body {
     padding: 20px;
 }
 
+.menu {
+    width: 80%;
+    margin: auto;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -47,4 +57,36 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: orange;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+#video-player {
+    text-align: center;
+}
+
+#queue-container {
+    margin-top: 20px;
+}
+
+#video-queue {
+    list-style-type: none;
+    padding: 0;
 }

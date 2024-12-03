@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gitiy Videos</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="../logo.png" alt="Логотип Gitiy" class="logo">
+        <h1>Gitiy Videos</h1>
+        <p>Добро пожаловать в раздел видео Gitiy! Здесь вы найдете наши последние видео.</p>
+
+        <div id="video-player">
+            <h2>Сейчас смотрите:</h2>
+            <video id="current-video" controls>
+                <source id="video-source" src="" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+
+        <div id="queue-container">
+            <h2>Очередь видео:</h2>
+            <ul id="video-queue"></ul>
+        </div>
+
+        <py-script src="scripts/py/video_picker.py"></py-script>
+        
+        <script src="scripts/js/script.js"></script>
+    </div>
+</body>
+</html>
