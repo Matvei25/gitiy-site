@@ -15,26 +15,28 @@
         <h1>Gitiy Videos</h1>
         <p>Добро пожаловать в раздел видео Gitiy! Здесь вы найдете наши последние видео.</p>
 
-        <div id="video-player">
+        <section id="video-player">
             <h2>Сейчас смотрите:</h2>
             <video id="current-video" controls>
                 <source id="video-source" src="" type="video/mp4">
                 Ваш браузер не поддерживает видео.
             </video>
-        </div>
+        </section>
 
-        <div id="queue-container">
+        <section id="queue-container">
             <h2>Очередь видео:</h2>
             <ul id="video-queue"></ul>
-        </div>
+        </section>
 
-        <h2>Загрузите видео</h2>
-        <form id="upload-form" enctype="multipart/form-data">
-            <input type="file" id="video-file" name="video" accept="video/mp4" required>
-            <button type="submit">Загрузить</button>
-        </form>
-
-        <script src="scripts/js/script.js"></script>
+        <section id="upload-section">
+            <h2>Загрузите видео</h2>
+            <form id="upload-form" enctype="multipart/form-data">
+                <input type="file" id="video-file" name="video" accept="video/mp4" required>
+                <button type="submit">Загрузить</button>
+            </form>
+        </section>
     </div>
+
+    <script src="scripts/js/script.js"></script>
 </body>
 </html>
