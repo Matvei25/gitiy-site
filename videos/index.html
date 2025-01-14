@@ -28,8 +28,12 @@
             <ul id="video-queue"></ul>
         </div>
 
-        <py-script src="scripts/py/video_picker.py"></py-script>
-        
+        <h2>Загрузите видео</h2>
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" id="video-file" name="video" accept="video/mp4" required>
+            <button type="submit">Загрузить</button>
+        </form>
+
         <script src="scripts/js/script.js"></script>
     </div>
 </body>
